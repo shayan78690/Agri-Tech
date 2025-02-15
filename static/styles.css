@@ -1,0 +1,12 @@
+/* Custom styles */
+.bg-gradient-green {
+    background: linear-gradient(135deg, #48bb78, #38a169);
+}
+
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
