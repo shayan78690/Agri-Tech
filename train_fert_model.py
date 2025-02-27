@@ -8,6 +8,7 @@ import joblib
 # Load the dataset
 fert_data = pd.read_csv("dataset\Fertilizer Prediction.csv")
 
+# TODO : get dataset from an [api] or [local_db]
 # Encode categorical columns
 label_encoder = LabelEncoder()
 fert_data['Soil Type'] = label_encoder.fit_transform(fert_data['Soil Type'])

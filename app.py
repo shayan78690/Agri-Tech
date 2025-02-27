@@ -12,6 +12,7 @@ crop_scaler = joblib.load("models/crop_scaler.pkl")
 fert_model = joblib.load("models/fert_model.pkl")
 fert_scaler = joblib.load("models/fert_scaler.pkl")
 
+# TODO : select from an [api] or fetch it from a [local_db](max no. of params)
 # Crop dictionary
 crop_dict = {
     1: "Rice", 2: "Maize", 3: "Chickpea", 4: "Kidney Beans", 5: "Pigeon Peas",
@@ -21,6 +22,7 @@ crop_dict = {
     21: "Jute", 22: "Coffee"
 }
 
+# TODO : select from an [api] or fetch it from a [local_db](max no. of params)
 # Fertilizer dictionary
 fert_dict = {
     1: "Urea", 2: "DAP", 3: "14-35-14", 4: "28-28", 5: "17-17-17",

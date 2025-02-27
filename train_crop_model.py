@@ -8,6 +8,7 @@ import joblib
 # Load the dataset
 crop_data = pd.read_csv("dataset/Crop_recommendation.csv")
 
+# TODO : get dataset from an [api] or [local_db]
 # Encode the target column (crop names to numbers)
 crop_dict = {
     'rice': 1, 'maize': 2, 'chickpea': 3, 'kidneybeans': 4, 'pigeonpeas': 5,
@@ -15,7 +16,8 @@ crop_dict = {
     'banana': 11, 'mango': 12, 'grapes': 13, 'watermelon': 14, 'muskmelon': 15,
     'apple': 16, 'orange': 17, 'papaya': 18, 'coconut': 19, 'cotton': 20,
     'jute': 21, 'coffee': 22
-}
+} 
+# ! No. of dataset increas
 crop_data['label'] = crop_data['label'].map(crop_dict)
 
 # Split features and target
